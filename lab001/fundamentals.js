@@ -18,4 +18,20 @@ console.log(
     "Reg. = " + 
     aCar.registration.year + "-" + 
     aCar.registration.county_code + "-" + 
-    aCar.registration.number);
+    aCar.registration.number
+);
+
+
+aCar.mileage = 10000;
+aCar.colour = {
+    exterior_colour : "red",
+    interior_fabric : {
+        texture : "leather" ,
+        shade : "cream"
+    }
+}
+    
+console.log("It is a " + aCar.colour.exterior_colour + " car," +
+    aCar.mileage + " mileage, with " +
+    aCar.colour.interior_fabric.texture + " interior."
+);
